@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#
+#ddedalus-jupyter
+#
+#a simple script to run Jupyter notebooks inside a docker container with Dedalus
+#
+#Usage:
+#    ddedalus-jupyter 
+
+docker run -v $(pwd):/home/dedalus/work -it --rm -p 8888:8888 dedalusproject/dedalus-jupyter
