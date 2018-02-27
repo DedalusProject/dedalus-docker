@@ -1,6 +1,7 @@
 FROM dedalusproject/debian-itest
 USER root
 RUN apt-get -y update && apt-get install -y \
+    bc \
     libatlas-base-dev \
     libatlas3-base \
     libssl-dev \
@@ -11,8 +12,10 @@ RUN apt-get -y update && apt-get install -y \
     uuid-dev \
     libfreetype6-dev \
     libhdf5-dev \
+    libopenmpi-dev \
+    openmpi-bin \
+    tk-dev \
     mercurial \
-    libzmq-dev \
     libsqlite3-dev \
     gfortran \
     openssh-server \
